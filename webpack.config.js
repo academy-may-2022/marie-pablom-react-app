@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'my-first-webpack.bundle.js'
@@ -40,5 +40,8 @@ module.exports = {
   new HtmlWebpackPlugin({
     title: 'Development',
   }),
+    // new webpack.ProvidePlugin({
+    //   "React": "react",
+    // }),
   ]
 };
