@@ -1,7 +1,7 @@
 import React from 'react';
-import './Board.js';
+import { Board } from './Board'
 
-const Game = () => {
+export const Game = () => {
   return (
     <div className="game">
       <div className="game-board">
@@ -11,4 +11,3 @@ const Game = () => {
   );
 };
 
-export default Game;

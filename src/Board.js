@@ -1,6 +1,7 @@
 import React from 'react';
+import { Square } from './Square'
 
-const Board = () => {
+export const Board = () => {
   const renderSquare = i => {
     return <Square value={i} />;
   };
@@ -27,4 +28,3 @@ const Board = () => {
   );
 };
 
-export default Board;
